@@ -1,0 +1,199 @@
+
+// Colores
+$primary-color: orangered;
+$secondary-color: white;
+$background-color: black;
+$section-bg-color: gray;
+$section-border-color: red;
+$footer-bg-color: red;
+$footer-border-color: black;
+
+// Fonts
+$font-family-heading: Verdana, Geneva, Tahoma, sans-serif;
+$font-family-body: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+// espaciados
+$gap: 2rem;
+$padding: 2rem;
+$margin: 2rem;
+$border-width: 2px;
+
+// tamaños
+
+$header-height: 50px;
+$header-logo-width: 200px;
+$header-border-width: 2px;
+$header-gap: 10rem;
+$section-max-width: 1200px;
+$footer-margin-top: 6rem;
+$footer-padding: 1.5rem;
+$footer-font-size: 25px;
+$footer-social-size: 20px;
+$logo-width: 200px;
+$logo-height: 50px;
+$title-font-size: 30px;
+$section-padding: 2rem;
+$footer-font-size: 25px;
+$iframe-padding: 1.5rem;
+
+// Animaciones
+$animation-duration: 1s;
+$animation-timing: ease-in-out;
+
+// Common styles
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin transition($properties) {
+  transition: $properties 0.5s ease;
+}
+
+%fadeInDown {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+%listItem {
+  a {
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    border-bottom: $border-width solid black;
+    @include transition(border-color);
+    color: $primary-color;
+  }
+
+  &:hover {
+    a {
+      border-color: $secondary-color;
+    }
+  }
+}
+
+
+
+.header-container {
+  @extend %fadeInDown;
+  border: $border-width solid black;
+  display: flex;
+  gap: $header-gap;
+  @include center;
+  background-color: $background-color;
+  flex-wrap: wrap;
+
+  .logo {
+    width: $logo-width;
+    height: $logo-height;
+  }
+}
+
+.list {
+  display: flex;
+  padding: $padding;
+  gap: $gap;
+  flex-wrap: wrap;
+  @include center;
+}
+
+.list-item {
+  @extend %listItem;
+}
+
+.estilos-section {
+  max-width: $section-max-width;
+  flex-wrap: wrap;
+  margin: $margin auto;
+}
+
+.estilo-titulo-del-section {
+  font-family: $font-family-heading;
+  color: $secondary-color;
+  text-align: center;
+  font-weight: bold;
+  @include center;
+  font-size: $title-font-size;
+  padding: $section-padding / 2;
+  border: $border-width * 3 solid $section-border-color;
+  background-color: $primary-color;
+}
+
+.estilos-section p {
+  font-family: $font-family-body;
+  color: $secondary-color;
+  font-size: $title-font-size;
+  text-align: center;
+  font-weight: bold;
+  @include center;
+  padding: $section-padding * 2;
+  flex-wrap: wrap;
+  background-color: $section-bg-color;
+  margin: $margin auto;
+  border: $border-width * 2 solid $section-border-color;
+}
+
+.iframe {
+  margin: $margin auto;
+  padding: 0 $iframe-padding;
+  @include center;
+  background-color: $background-color;
+}
+
+.container {
+  @include center;
+  gap: $gap;
+  max-width: $section-max-width;
+  flex-wrap: wrap;
+  margin: $margin auto;
+}
+
+.imagenes {
+  @include center;
+  flex-direction: column;
+  gap: $gap;
+  max-width: 100%;
+  margin: $margin auto;
+}
+
+.footer {
+  font-size: $footer-font-size;
+  @include center;
+  background-color: $footer-bg-color;
+  border: $border-width solid $footer-border-color;
+  flex-direction: column;
+  margin-top: $footer-margin-top;
+
+  p {
+    font-size: $footer-font-size;
+    background-color: $background-color;
+    color: $secondary-color;
+    width: 100%;
+    text-align: center;
+    padding: $padding;
+  }
+}
+
+.redes {
+  display: flex;
+  font-size: $footer-social-size;
+  margin-top: $margin;
+  gap: $gap;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: $margin auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
