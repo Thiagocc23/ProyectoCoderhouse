@@ -33,6 +33,25 @@ Header
 
 */
 
+.header-conteiner {
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+  
 
 .header-conteiner{
 
@@ -83,6 +102,8 @@ Header
  }
 
 
+/*Section del Index*/
+
 
 .estilos-section{
     max-width: 1200px;
@@ -93,35 +114,37 @@ Header
 
 .estilo-titulo-del-section{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
+    color: white;
     text-align: center;
     font-weight: bold;
     display: flex;
   justify-content: center;
-    font-size: 30px
-    ;
-  
-
+    font-size: 30px;
+    padding: 1.5rem;
+    border: 6px solid black;
+    background-color: #fd5949;
+    
 
 
 }
 
 
 
-
-/*Section*/
-
 .estilos-section p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:red;
+    color:white;
     font-size: 25px;
     text-align: center;
     font-weight: bold;
     display: flex;
     align-items: center;
-    padding: 1.5rem;
+    padding: 5rem;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: gray;
+    margin: 5rem auto;
+    border: 5px solid  red;
+    
 
 
    
@@ -135,6 +158,9 @@ Header
  display: flex;
  justify-content: center;
  flex-wrap: wrap;
+ background-color: black;
+ max-width: 100%;
+ 
 
  
 
@@ -144,14 +170,14 @@ Header
 
     
 .conteiner{
-    display: flex;
+   display: flex;
     gap: 5rem;
     justify-content: center;
-    align-items: center;
+  
    max-width: 1200px;
    flex-wrap: wrap;
-  padding: 0 1.5rem;
-   margin: 8rem auto;
+
+   margin: 1rem auto;
   
 
 }   
@@ -160,16 +186,27 @@ Header
 
 .imagenes{
 
-        display: flex;
+       display: flex;
         flex-direction: column;
-        flex: 1 1 clamp(300px,30%,400px);
-        align-items: center;
-        gap: 1.5rem;
+       justify-content: center;
+        
+     flex-wrap: wrap;
+   
+     display: flex;
+     gap: 2rem; 
+     justify-content: center;
+     max-width: 100%; 
+     margin: 2rem auto; 
+     flex-wrap: wrap;
+   
+   
+
+   
   
    
 } 
 
-/*footer*/
+/*footer del index*/
 
 
 
@@ -213,10 +250,31 @@ margin-top: 6rem;
 
 
 
-/*seccion Productos*/
+
+/*Page de Productos*/
 
 
-/*header*/
+/*header de productos*/
+
+
+.header-productos {
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
 
 .header-productos{
 
@@ -269,7 +327,7 @@ margin-top: 6rem;
 
 
 
-/*seccion*/
+/*seccion de productos*/
 
 .section-productos{
 
@@ -297,6 +355,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
+max-width: 100%;
 
 
 }
@@ -325,20 +384,13 @@ align-items: center;
     display: flex;
     gap: 5rem;
     justify-content: center;
-    justify-content: center;
+
     max-width: 1200px;
     margin: 8rem auto;
     flex-wrap: wrap;
     padding: 0 1.5rem;
-   
-
-
-
-
-  
 
 }
-
 
 .articulo{
     display: flex;
@@ -379,9 +431,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 .footer-productos{
 
  display: flex;
-
-
-  align-items: center;
+ align-items: center;
   justify-content: center;
   background-color: red;
   border:  2px solid black;
@@ -436,3 +486,604 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 }
 
 .yutube{    background: red;}
+
+@keyframes social-media-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .redes-productos .facebook,
+  .redes-productos .instagram,
+  .redes-productos .twitter,
+  .redes-productos .yutube {
+    animation: social-media-animation 1s infinite alternate;
+  }
+
+
+/*page de quienes somos/*
+
+/*Header de quienes somos*/
+
+.header-quienessomos {
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.header-quienessomos{
+
+    border: 2px solid black;
+    display: flex;
+    gap: 10rem;
+
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    flex-wrap: wrap;
+  
+
+}
+
+.header-quienessomos img{
+    
+    width: 200px;
+    height: 50px;
+
+
+
+}
+
+
+.list-2{
+
+    display: flex;
+
+    padding: 2rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+   justify-content: center;
+    
+}   
+.list-items2 a{
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    transition: all 0.5s ease;
+   color: orangered;
+
+}
+
+ .list-items2:hover a{
+    border-color: white;
+ }
+
+
+/*section de la page quienes somos*/
+
+.section-quienessomos{
+  margin: 1rem auto;
+   max-width: 1200px;
+    
+
+}
+.titulo-quienessomos{
+
+    text-align: center;
+    font-size: 48px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 3rem;
+    color: red
+}
+.section-quienessomos p{
+    text-align: center;
+    padding: 3rem;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: gray;
+    border: 4px solid black;
+    
+}
+.imagenes-quienessomos{
+    display: flex;
+    gap: 2rem; 
+    justify-content: center;
+    max-width: 100%; 
+    margin: 2rem auto; 
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #fd5949;
+    border: 4px solid black;
+   
+
+}
+
+
+.lista-section{
+    text-align: center;
+    padding: 3rem;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: gray;
+    border: 4px solid black;
+}
+
+/*footer de la page quienes somos*/
+.footer-quienessomos{
+
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     background-color: red;
+     border:  2px solid black;
+    flex-direction: column;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    
+   } 
+   
+    
+   
+   .redes-quienessomos{
+       display: flex;
+       font-size: 20px;
+      margin-top: 2rem;
+       gap: 3rem;
+       justify-content: center;
+     margin: 2rem auto;
+    flex-wrap: wrap;}
+   
+   
+   
+   .footer-quienessomos p{ font-size: 2rem ;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    
+   
+   
+   }
+   .facebook, .instagram, .twitter,.yutube{
+   
+       color: white;
+       padding: 1.5rem;
+       border-radius: 30%;
+   
+   }
+   
+   .facebook {
+       background-color:rgb(15, 15, 196) ;
+   }
+   
+   .instagram {
+       background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+   }
+   
+   
+   .twitter{
+       background : deepskyblue;
+   }
+   
+   .yutube{    background: red;}
+   
+   @keyframes social-media-animation {
+       0% { transform: scale(1); }
+       50% { transform: scale(1.1); }
+       100% { transform: scale(1); }
+     }
+     
+     .redes-quienessomos .facebook,
+     .redes-quienessomos .instagram,
+     .redes-quienessomos .twitter,
+     .redes-quienessomos .yutube {
+       animation: social-media-animation 1s infinite alternate;
+     }
+
+    
+
+
+    /*page Ubicacion*/
+    /* header de la page ubicacion*/
+    .header-ubicacion {
+        animation: fadeInDown 1s ease-in-out;
+    }
+    
+
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+     .header-ubicacion {
+
+        border: 2px solid black;
+        display: flex;
+        gap: 10rem;
+    
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        flex-wrap: wrap;
+      
+    
+    }
+    
+    .header-ubicacion img{
+        
+        width: 200px;
+        height: 50px;
+    
+    
+    
+    }
+    
+    
+    .list-4{
+    
+        display: flex;
+    
+        padding: 2rem;
+        gap: 3rem;
+        flex-wrap: wrap;
+       justify-content: center;
+        
+    }   
+    .list-items4 a{
+        font-size: 2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        border-bottom: 2px solid black;
+        transition: all 0.5s ease;
+       color: orangered;
+    
+    }
+    
+     .list-items4:hover a{
+        border-color: white;
+     }
+    
+
+/*section de la page de ubicacion*/
+ .section-ubicacion{
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    flex-wrap: wrap;
+}
+.titulo-ubicacion{
+    text-align: center;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding: 2rem;
+    background-color: black;
+    border: 4px solid red;
+}
+.mapa{
+    
+ margin: 3rem auto;
+ padding: 1rem;
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ background-color:red;
+ max-width: 100%;
+
+}
+.section-ubicacion p{
+    text-align: center;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: 4px solid   red;  
+    margin: 5rem auto;
+}
+
+.img-local{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+
+    
+   
+}
+.img-local1{
+    margin-right: 20px;
+    margin-left: 15px;
+    padding: 1rem;
+  
+}
+.img-local2{
+    margin-right: 20px;
+    margin-left: 15px;
+    padding: 1rem;
+}
+
+
+/*footer de la page ubicacion*/
+.footer-ubicacion{
+
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     background-color: red;
+     border:  2px solid black;
+    flex-direction: column;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    
+   } 
+   
+    
+   
+   .redes-ubicacion{
+       display: flex;
+       font-size: 20px;
+      margin-top: 2rem;
+       gap: 3rem;
+       justify-content: center;
+     margin: 2rem auto;
+    flex-wrap: wrap;}
+   
+   
+   
+   .footer-ubicacion p{ font-size: 2rem ;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    
+   
+   
+   }
+   .facebook, .instagram, .twitter,.yutube{
+   
+       color: white;
+       padding: 1.5rem;
+       border-radius: 30%;
+   
+   }
+   
+   .facebook {
+       background-color:rgb(15, 15, 196) ;
+   }
+   
+   .instagram {
+       background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+   }
+   
+   
+   .twitter{
+       background : deepskyblue;
+   }
+   
+   .yutube{    background: red;}
+   
+   @keyframes social-media-animation {
+       0% { transform: scale(1); }
+       50% { transform: scale(1.1); }
+       100% { transform: scale(1); }
+     }
+     
+     .redes-ubicacion .facebook,
+     .redes-ubicacion .instagram,
+     .redes-ubicacion .twitter,
+     .redes-ubicacion .yutube {
+       animation: social-media-animation 1s infinite alternate;
+     }
+
+
+    
+
+/*Page ayuda*/
+
+    /*header de la page Ayuda*/
+    .header-ayuda{
+        animation: fadeInDown 1s ease-in-out;
+    }
+    
+
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+     .header-ayuda {
+
+        border: 2px solid black;
+        display: flex;
+        gap: 10rem;
+    
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        flex-wrap: wrap;
+      
+    
+    }
+    
+    .header-ayuda img{
+        
+        width: 200px;
+        height: 50px;
+    
+    
+    
+    }
+    
+    
+    .list-5{
+    
+        display: flex;
+    
+        padding: 2rem;
+        gap: 3rem;
+        flex-wrap: wrap;
+       justify-content: center;
+        
+    }   
+    .list-items5 a{
+        font-size: 2rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        border-bottom: 2px solid black;
+        transition: all 0.5s ease;
+       color: orangered;
+    
+    }
+    
+     .list-items5:hover a{
+        border-color: white;
+     }
+
+/* section de la page ayuda*/
+
+
+
+ .section-ayuda{
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: 1rem auto; 
+
+ }
+ .section-ayuda p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: black;
+    margin: 3rem auto;
+
+ }
+ .cuadro-ayuda{display: flex
+    ;justify-content: center;
+    margin: 1rem auto;
+    border: 6px solid red;
+    max-width: 100%;
+ 
+
+ }
+ .boton-ayuda{
+
+ display: flex;
+ justify-content: center;
+ margin: 1rem auto;
+ font-size: 25px;
+ color: white;
+ background-color: black;
+ padding: 1rem 2rem;
+   font-weight: bold;
+   border-radius: 100px;
+   cursor: pointer;
+   border: none;
+
+
+ }
+/*footer ayuda*/
+.footer-ayuda{
+
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     background-color: red;
+     border:  2px solid black;
+    flex-direction: column;
+    margin-top: 15rem;
+    flex-wrap: wrap;
+    
+   } 
+   
+    
+   
+   .redes-ayuda{
+       display: flex;
+       font-size: 20px;
+      margin-top: 2rem;
+       gap: 3rem;
+       justify-content: center;
+     margin: 2rem auto;
+    flex-wrap: wrap;}
+   
+   
+   
+   .footer-ayuda p{ font-size: 2rem ;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    
+   
+   
+   }
+   .facebook, .instagram, .twitter,.yutube{
+   
+       color: white;
+       padding: 1.5rem;
+       border-radius: 30%;
+   
+   }
+   
+   .facebook {
+       background-color:rgb(15, 15, 196) ;
+   }
+   
+   .instagram {
+       background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+   }
+   
+   
+   .twitter{
+       background : deepskyblue;
+   }
+   
+   .yutube{    background: red;}
+   
+   @keyframes social-media-animation {
+       0% { transform: scale(1); }
+       50% { transform: scale(1.1); }
+       100% { transform: scale(1); }
+     }
+     
+     .redes-ayuda .facebook,
+     .redes-ayuda.instagram,
+     .redes-ayuda .twitter,
+     .redes-ayuda .yutube {
+       animation: social-media-animation 1s infinite alternate;
+     }
+
+
+/*# sourceMappingURL=estilos.css.map */
