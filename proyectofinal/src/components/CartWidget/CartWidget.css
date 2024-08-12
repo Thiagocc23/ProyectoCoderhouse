@@ -1,0 +1,29 @@
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .mostrar-cantidad {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    line-height: 17px;
+  }
+  .mostrar-cantidad2 {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    color: white;
+    background-color: #062bfb;
+    border-radius: 50%;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    line-height: 17px;
+  }
